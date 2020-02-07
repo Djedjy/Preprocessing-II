@@ -1,1 +1,27 @@
 // Navigation Styles here
+
+@font-roboto: 'Roboto', sans-serif;
+@font-indie: 'Indie Flower', cursive;
+
+.navigation-content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 1.5em .4em 5em;
+    margin: 2em 0 5em;
+    border-bottom: 1px dashed black;
+}
+
+.navigation-logo {
+    font-family: @font-indie;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.navigation-links a {
+    font-size: 1.6rem;
+    margin: .9em;
+    font-family: @font-roboto;
+    font-weight: bold;
+    text-decoration: none;
+}
