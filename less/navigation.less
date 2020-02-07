@@ -1,7 +1,5 @@
 // Navigation Styles here
 
-@font-roboto: 'Roboto', sans-serif;
-@font-indie: 'Indie Flower', cursive;
 
 .navigation-content {
     display: flex;
@@ -9,12 +7,13 @@
     flex-flow: row wrap;
     padding: 1.5em .4em 5em;
     margin: 2em 0 5em;
-    border-bottom: 1px dashed black;
+    border-bottom: 2px dashed @silver;
 }
 
 .navigation-logo {
     font-family: @font-indie;
     font-size: 4rem;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -24,4 +23,23 @@
     font-family: @font-roboto;
     font-weight: bold;
     text-decoration: none;
+}
+
+@media @mobile {
+    .navigation-content {
+        //border: 2px solid red;
+        flex-flow: wrap column;
+        text-align: center;
+        padding: 1.5em .4em 1.5em
+    }
+
+    .navigation-logo {
+        padding-bottom: .4em;
+    }
+
+    .navigation-links a {
+        padding-bottom: -2em;
+    }
+
+    
 }
