@@ -177,10 +177,10 @@ img {
   border-bottom: 2px dashed #C0C0C0;
 }
 .navigation-logo {
-  font-family: 'Indie Flower', cursive;
   font-size: 4rem;
   font-weight: bold;
   text-decoration: none;
+  font-family: 'Indie Flower', cursive;
 }
 .navigation-links a {
   font-size: 1.6rem;
@@ -308,4 +308,13 @@ img {
   .home .content-pick .destination {
     width: 100%;
   }
+}
+.home .content-pick .destination .btn {
+  border-radius: 6px;
+  background-color: #17A2B8;
+  padding: 1.5em 1.5em 1.5em;
+  border: 1px solid #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  text-align: center;
 }
