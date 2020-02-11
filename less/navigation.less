@@ -1,1 +1,45 @@
 // Navigation Styles here
+
+
+.navigation-content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 1.5em .4em 5em;
+    margin: 2em 0 5em;
+    border-bottom: 2px dashed @silver;
+}
+
+.navigation-logo {
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: @font-indie;
+}
+
+.navigation-links a {
+    font-size: 1.6rem;
+    margin: .9em;
+    font-family: @font-roboto;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media @mobile {
+    .navigation-content {
+        //border: 2px solid red;
+        flex-flow: wrap column;
+        text-align: center;
+        padding: 1.5em .4em 1.5em
+    }
+
+    .navigation-logo {
+        padding-bottom: .4em;
+    }
+
+    .navigation-links a {
+        padding-bottom: -2em;
+    }
+
+    
+}
